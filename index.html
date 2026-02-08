@@ -244,7 +244,7 @@
       </article>
     </main>
     <footer class="footer">
-      <button class="footer__button" type="button" onclick="window['popup-footer'].showModal()">
+      <button class="footer__button" type="button" onclick="window['popup-footer'].showModal(); return false;">
         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 39 39" class="footer__button-icon">
           <use href="./svg/disket.svg#disco-icon"></use>
         </svg>
@@ -257,7 +257,7 @@
           </svg>
           <span class="footer-popup__caption">Вставьте дискету, чтобы продолжить</span>
         </div>
-        <button class="footer-popup__button--close" type="button" onclick="window['popup-footer'].close()">
+        <button class="footer-popup__button--close" type="button" onclick="window['popup-footer'].close(); return false;">
           <span class="footer-popup__button-text">Ок</span>
         </button>
       </dialog>
